@@ -1,0 +1,164 @@
+body{
+    font-family: 'Pretendard';
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.text-white{
+    color:white
+}
+.text-center{
+    text-align: center;
+}
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
+h1{ font-size: 50px;}
+.hd{
+    background-color: rgb(250, 239, 241, 0.8);
+    border-radius: 50px;
+    border-bottom: 1px solid white;
+    padding: 1em 2em;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+
+}
+#gnb li{
+    padding-left: 1em;
+    font-weight: 300;
+}
+
+#gnb  li  a{
+    transition: 0.3s;
+}
+
+#gnb li:after{
+    content: "";
+    /* 가상선택자 */
+    display: block;
+    height: 2px;
+    width: 0px;
+    transition: 0.3s;
+}
+
+#gnb li:nth-child(1)::after{
+    background-color: pink;
+}
+
+#gnb li:nth-child(2)::after{
+    background-color: rgb(247, 195, 128);
+}
+
+#gnb li:nth-child(3)::after{
+    background-color: rgb(193, 230, 178);
+}
+
+#gnb li:hover:after{
+    width: 100%;
+}
+
+#gnb  li:hover  a{
+    font-size: 1.3em;
+}
+
+#gnb  li:hover:nth-child(1) a{
+    /* a태그는 직접 색상 설정을 해줘야함. 그래서 nth-child 뒤에 a */
+    color: palevioletred;
+}
+
+#gnb  li:hover:nth-child(2) a{
+    color: rgb(247, 195, 128);
+}
+
+#gnb  li:hover:nth-child(3) a{
+    color: rgb(193, 230, 178);
+}
+
+.child1, .child2, .child3{
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: center;
+    color: palevioletred;
+    font-size: 1.3em;
+}
+
+.child1{
+    background-color: rgb(243, 201, 208);  
+}
+.child2{
+    background-color: pink;  
+}
+.child3{
+    background-color: rgb(255, 178, 191);  
+}
+
+.ft{
+    padding: 2em;
+}
+
+
+.sns{
+   justify-content: center;
+}
+
+.sns li{ padding: 8px; border-radius: 20px; margin: 0 10px;}
+
+.sns li:first-child{
+    background-color: rgb(249, 83, 210);
+}
+.sns li:nth-child(2){
+    background-color: rgb(7, 7, 138); 
+}
+.sns li:last-child{
+    background-color: rgb(247, 22, 22);    
+}
+
+.hd h1 svg{
+    width: 150px;
+    height: 2.5rem;
+    display: block;
+}
+
+.hd h1 a{
+    display: block;
+}
+
+.hd h1 a svg path{
+    fill: palevioletred;
+}
+
+.hd h1 a:hover svg path:nth-child(1){
+    fill: palevioletred;
+}
+
+.hd h1 a:hover svg path:nth-child(2){
+    fill: skyblue;
+}
+
+.hd h1 a:hover svg path:nth-child(3){
+    fill: rgb(248, 155, 101);
+}
+
+.hd h1 a:hover svg path:nth-child(4){
+    fill: rgb(132, 240, 132);
+}
+
+.hd h1 a:hover svg path:nth-child(5){
+    fill: palevioletred;
+}
+
+.hd h1 a:hover svg path:nth-child(6){
+    fill: skyblue;
+}
+
+.hd h1 a:hover svg path:nth-child(7){
+    fill: rgb(132, 240, 132);
+}
